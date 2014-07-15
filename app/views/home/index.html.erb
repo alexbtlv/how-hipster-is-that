@@ -1,0 +1,4 @@
+<h1>Home#index</h1>
+<% @instagram.each do |instagram| %>
+	<%= image_tag instagram.images.standart_resolution.url %>
+<% end %>

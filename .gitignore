@@ -17,3 +17,6 @@
 
 # Ignore database.yml file 
 /config/database.yml
+
+# and instagram secrets
+/config/initializers/instagram.rb
