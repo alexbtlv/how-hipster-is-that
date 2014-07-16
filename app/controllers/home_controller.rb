@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
-  	@instagram = Instagram.user_recent_media("9131957", {:count => 1})
+  	picture = HTTParty.get('http://api.instagram.com/oembed?url=http://instagram.com/p/qhcqNgAHaI/')
+  	@link = picture['url']
   end
 end
