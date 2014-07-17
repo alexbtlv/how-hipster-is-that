@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Link:</strong>
-  <%= @picture.link %>
+  <%= @picture.title %>
+  <p>by</p>
+  <%= link_to @picture.author_name, @picture.author_url %> <br/>
+  <%= image_tag @picture.url %>
+
 </p>
 
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
